@@ -1,0 +1,53 @@
+{
+  "name": "typescript-express-starter",
+  "version": "1.0.0",
+  "description": "A starter project for a TypeScript Express API",
+  "license": "MIT",
+  "scripts": {
+    "clean": "rm -rf node_modules && rm -rf dist",
+    "check-types": "tsc --noEmit",
+    "lint": "eslint --fix --ext .ts src",
+    "build": "rm -rf dist && tsc",
+    "dev": "nodemon",
+    "start": "NODE_ENV=production node -r ./tsconfig-paths-bootstrap.js dist/app.js"
+  },
+  "engines": {
+    "node": "16.18.0"
+  },
+  "dependencies": {
+    "@types/express-serve-static-core": "^4.17.33",
+    "cors": "^2.8.5",
+    "cross-fetch": "^3.1.5",
+    "dotenv": "^16.0.3",
+    "express": "^4.18.2",
+    "helmet": "^6.0.1",
+    "jsonwebtoken": "^9.0.0",
+    "jwk-to-pem": "^2.0.5",
+    "morgan": "^1.10.0",
+    "pg": "^8.9.0",
+    "winston": "^3.8.2",
+    "zod": "^3.20.6"
+  },
+  "devDependencies": {
+    "@types/cors": "^2.8.13",
+    "@types/express": "^4.17.17",
+    "@types/jsonwebtoken": "^9.0.1",
+    "@types/jwk-to-pem": "^2.0.1",
+    "@types/morgan": "^1.9.4",
+    "@types/node": "^18.14.4",
+    "@types/pg": "^8.6.6",
+    "@typescript-eslint/eslint-plugin": "^5.54.0",
+    "@typescript-eslint/parser": "^5.54.0",
+    "eslint": "^8.35.0",
+    "eslint-config-prettier": "^8.6.0",
+    "eslint-plugin-import": "^2.27.5",
+    "eslint-plugin-node": "^11.1.0",
+    "eslint-plugin-prettier": "^4.2.1",
+    "eslint-plugin-promise": "^6.1.1",
+    "nodemon": "^2.0.21",
+    "prettier": "^2.8.4",
+    "ts-node": "^10.9.1",
+    "tsconfig-paths": "^3.14.2",
+    "typescript": "^4.9.5"
+  }
+}
