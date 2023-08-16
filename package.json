@@ -12,7 +12,7 @@
     "start": "NODE_ENV=production node -r ./tsconfig-paths-bootstrap.js dist/app.js"
   },
   "engines": {
-    "node": "16.18.0"
+    "node": "16"
   },
   "dependencies": {
     "@types/express-serve-static-core": "^4.17.33",
