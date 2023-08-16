@@ -1,5 +1,5 @@
 {
-  "name": "typescript-express-starter",
+  "name": "typescript-express-node-pg-starter",
   "version": "1.0.0",
   "description": "A starter project for a TypeScript Express API",
   "license": "MIT",
